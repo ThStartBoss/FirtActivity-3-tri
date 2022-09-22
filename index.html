@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade media</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href='vm.png'>
+</head>
+<body>
+    <header><h1>Velocidade Média</h1></header>
+    <nav class="links">
+        <ul>
+            <a href="./index.html">Home</a>
+            <a href='sobre.html'>Sobre</a>
+        </ul>
+
+    </nav>
+    <div class="calculo">
+            <h3 id="cal">Cálculo</h3>
+             <input id="dist" type="number" placeholder="Informe o valor do deslocamento">
+             <input id="temp" type="number" placeholder="Informe o intervalo de tempo">
+             <button onclick="calcular()" id="botao1">Calcular</button>
+        <button onclick="limpar()" id="botao2">Limpar</button>
+        <input id="vel" type="number" placeholder="" readonly>
+    </div>
+    <div class="resultados">
+        <h3 id="resu">Resultados</h3>
+        <input type="text">
+    </div>
+   
+    <footer>
+        <ul>
+            <li>Senai SC</li>
+            <li>Curso de Desenvolvimento de Sistemas</li>
+            <li>Lógica de Programa</li>
+            <li>Tiago Martins</li>
+        </ul>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
