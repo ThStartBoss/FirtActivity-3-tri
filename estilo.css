@@ -3,19 +3,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
  }
-  
+
 
  header {
      background-color: #F2C48D;
      color: #F24405;
      padding: 5px;
  }
- 
+
 .links{
     border: none;
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navegation{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
  .calculo{
@@ -23,6 +36,8 @@ body {
      border-radius: 15px;
      margin-left: 100px;
      margin-right: 100px;
+     display: flex;
+     flex-direction: column;
  }
 
  .resultados{
@@ -31,38 +46,42 @@ body {
     margin-left: 100px;
     margin-right: 100px;
  }
- 
+
 #dist{
     border-color: #ec7e3e;
     padding: 8px 15px 15px 15px;
-    background-color: #F5C88C;
-    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
     color: #F24405;
+    border: solid 1.5px;
 }
 
 #dist:hover{
-    background-color: #f3b361;
+    background-color: #ece7df;
+   
 }
 
 #temp{
     border-color: #ec7e3e;
     padding: 8px 15px 15px 15px;
-    background-color: #F5C88C;
-    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
     color: #F24405;
+    border: solid 1.5px;
 }
 
 #temp:hover{
-    background-color: #f3b361;
+    background-color: #ece7df;
 }
 
 #vel{
     border-color: #ec7e3e;
     padding: 8px 15px 15px 15px;
     background-color: #F5C88C;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #F24405;
     cursor: default;
+    border: solid 1.5px;
 }
 
 #botao1{
@@ -70,8 +89,13 @@ body {
     outline: none;
     color: #D96523;
     border-color: #ec7e3e;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: solid 1.5px;
     cursor: pointer;
+    padding: 10px 10px 12px 10px;
+    width: 80px; 
+    display: inline-flex;
+    text-align: center;
 }
 
 #botao1:hover{
@@ -83,8 +107,13 @@ body {
     outline: none;
     color: #D96523;
     border-color: #ec7e3e;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
+    padding: 10px 10px 12px 10px;
+    width: 80px; 
+    border: solid 1.5px;
+    display: inline-flex;
+    text-align: center;
 }
 
 #botao2:hover{
@@ -96,25 +125,20 @@ body {
      color: black;
      padding: 1px;
  }
- 
+
  footer {
   background-color: #D96523;
   color: #F2D6BD;
   padding:10px;
   margin-top: 50px;
  }
- 
+
  .calculo{
-     border-radius: 30px;
-    padding: 50px;
+     border-radius: 20px;
+    padding: 60px 130px;
     margin: 30px auto;
-
-    text-align: center;
     width: 30%;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    gap: 20px;
 
  }
 
@@ -126,18 +150,68 @@ body {
     width: 30%;
 
  }
- 
+
  #resu{
 text-align: left;
 background-color: #F5C88C;
 border-radius: 5px;
 color: #F24405;
+height: 15px;
+display: flex;
+align-items: center;
+padding: 15px;
+
 }
 
  #cal{
     text-align: left;
     background-color: #F5C88C;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #F24405;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
 
+}
+
+#array{
+    border-color: #ec7e3e;
+    padding: 170px 270px 15px 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #F24405;
+    cursor: default;
+    border: solid 1.5px;
+    
+}
+
+.sobreTítulo {
+    background-color: wheat;
+    text-align: center;
+    border-left: 10px;
+    color: orangered;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.sobreContainer {
+    text-align: center;
+    display: flex; flex-direction: column;
+    border: 3px solid orange;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 250px;
+}
+
+.navegation2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
