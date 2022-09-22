@@ -11,9 +11,9 @@
 <body>
     <header><h1>Velocidade Média</h1></header>
     <nav class="links">
-        <ul>
-            <a href="./index.html">Home</a>
-            <a href='sobre.html'>Sobre</a>
+        <ul class="navegation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href='sobre.html'>Sobre</a></li>
         </ul>
 
     </nav>
@@ -21,13 +21,15 @@
             <h3 id="cal">Cálculo</h3>
              <input id="dist" type="number" placeholder="Informe o valor do deslocamento">
              <input id="temp" type="number" placeholder="Informe o intervalo de tempo">
-             <button onclick="calcular()" id="botao1">Calcular</button>
-        <button onclick="limpar()" id="botao2">Limpar</button>
+             <div>
+                 <button onclick="calcular()" id="botao1">Calcular</button>
+                         <button onclick="limpar()" id="botao2">Limpar</button>
+             </div>
         <input id="vel" type="number" placeholder="" readonly>
     </div>
     <div class="resultados">
         <h3 id="resu">Resultados</h3>
-        <input type="text">
+        <input id="array" type="text">
     </div>
    
     <footer>
